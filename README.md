@@ -1,5 +1,6 @@
 # GEN711 Final Project
-## Group Members: Taylor Hartley
+## By: 
+Taylor Hartley
 ## Background
 qiime2_microbiome_project
 Gut to soil Axis
