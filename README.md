@@ -13,7 +13,7 @@ The analysis was performed using a laptop on the UNH RON server.
 - The program FastCQ was first used to determine the intial quality of the raw sequence data. This output a report with the statistics showing the sequencing quality. In addition to the quality, the number and length of the reads was also reported. Furthermore, FastQC also identified adapter sequences that need to be removed. The report identified the sequences that needed to be trimmed in further steps.  
 - To trim the unneccessary reads the program Trimmomatic was used. This program is intended to be used for Illumina paired-end data such as the data used for this project. Trimmomatic successfully removed the adapter sequences and low quality reads that were previously identified thereby improving the quality of the data and preparing the reads for alignment. FastQC was then run again to ensure the quality of the trimmed fastq files had improved.
 - The next program used was Bowtie2. This program aligned the reads to a reference genome and a sequence alignment map file was then produced.
-- The reuslts were visualized using the qiime2 visulaizer.
+- The reuslts were visualized using the qiime2 visualizer.
 ## Findings
 I was not able to upload a plot, but the first one would have been a venn diagram showing the similarity between the samples. In contrast, the second plot would have shown the different genes between the samples. Both plots would have been created using the qiime2 visualizer by inputting the data produced by Bowtie2. 
 ## References
