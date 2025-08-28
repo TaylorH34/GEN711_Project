@@ -10,11 +10,13 @@ qiime2_microbiome_project
 ## Methods 
 - The data was collected from two different ponds by a grad student at UNH. The data is Illumina HiSeq 2500, paired-end, 250 bp sequencing reads.
 The analysis was performed using a laptop on the UNH RON server. 
-- The program FastQC was first used to determine the intial quality of the raw sequence data. This output a report with the statistics showing the sequencing quality. In addition to the quality, the number and length of the reads was also reported. Furthermore, FastQC also identified adapter sequences that needed to be removed. The report identified the sequences that needed to be trimmed in further steps.  
-- To trim the unneccessary reads the program Trimmomatic was used. This program is intended to be used for Illumina paired-end data such as the data used for this project. Trimmomatic successfully removed the adapter sequences and low quality reads that were previously identified thereby improving the quality of the data and preparing the reads for alignment. FastQC was then run again to ensure the quality of the trimmed fastq files had improved.
-- The next program used was Bowtie2. This program aligned the reads to a reference genome and a sequence alignment map file was then produced.
-- The reuslts were visualized using the qiime2 visualizer.
+- The program DADA2 was first used to remove low-quality bases, correct sequencing errors, and used the reads to create Amplicon Sequence Variants (ASV). This output a feature table. This feature table inclued the amount of ASV in each sample, the ASV sequences, and the denoising statistics. From this, high quality sequences were obtained to be used for downstream analysis (1).  
+- A phylogenetic tree was created using the programs MAFFT and FastTree. This program aligned the sequences and created both rooted and unrooted phylogenetic trees. These tress are useful for analyzing evolutionary relationships between the sequence variants (1).
+- Taxonomy classification was determined using the Qiime2 feature-classifier program. This program produced a taxonomy file and assigned a classification to each ASV (1).
+- Lastly, to export the files the qiime tools export program was used. This allowed for visualization in other programs (1).
+- The results were then visualized using the qiime2 visualizer (2). 
 ## Findings
 I was not able to upload a plot, but the first one would have been a venn diagram showing the similarity between the samples. In contrast, the second plot would have shown the different genes between the samples. Both plots would have been created using the qiime2 visualizer by inputting the data produced by Bowtie2. 
 ## References
-1. Qiime2docs. Gut-to-soil axis tutorial 💩🌱. Microbiome marker gene analysis with QIIME 2. https://amplicon-docs.qiime2.org/en/latest/tutorials/gut-to-soil.html (2025). 
+1. Qiime2docs. Gut-to-soil axis tutorial 💩🌱. Microbiome marker gene analysis with QIIME 2. https://amplicon-docs.qiime2.org/en/latest/tutorials/gut-to-soil.html (2025).
+2. Qiime2view. Qiime2. https://view.qiime2.org/ (n.d.).
