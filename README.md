@@ -27,6 +27,7 @@ The analysis was performed using a laptop on the UNH RON server.
 Figure 1. 
 <img width="687" height="422" alt="Screenshot 2025-08-28 at 8 49 09 PM" src="https://github.com/user-attachments/assets/ca4c69d1-7e75-4de6-a05b-7222bab7eef9" />
 Figure 2. 
+
 - These are Qiime2 demultiplexing summary boxplots showing the per-base quality score of the reads in the samples. This includes the quality scores and sequencing errors for every read at each position. These plots were created using the qiime2 visualizer. The data prodced by dada2 were input to create the plots (2).
 
 ## References
