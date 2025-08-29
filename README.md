@@ -14,6 +14,13 @@ The analysis was performed using a laptop on the UNH RON server.
 - A phylogenetic tree was created using the programs MAFFT and FastTree. This program aligned the sequences and created both rooted and unrooted phylogenetic trees. These tress are useful for analyzing evolutionary relationships between the sequence variants (1).
 - Taxonomy classification was determined using the Qiime2 feature-classifier program. This program produced a taxonomy file and assigned a classification to each ASV (1).
 - Lastly, to export the files the qiime tools export program was used. This allowed for visualization in other programs (1).
+- Pipeline: Import and demultiplex using qiime tools import and qiime demux summarize.
+            Denoising using DAD2.
+            Visualization using metadata tabulate and feature-table summarize.
+            Phylogenetic tree using MAFFT and FastTree.
+            Core metrics using alpha rarefaction.
+            Taxonomy classification using classify sklearn, metadata tabulate, and taxa barplot.
+            Export data using qiime tools export.
 - The results were then visualized using the qiime2 visualizer (2). 
 ## Findings
 I was not able to upload a plot, but the first one would have been a venn diagram showing the similarity between the samples. In contrast, the second plot would have shown the different genes between the samples. Both plots would have been created using the qiime2 visualizer by inputting the data produced by Bowtie2. 
