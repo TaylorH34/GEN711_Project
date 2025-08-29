@@ -23,7 +23,11 @@ The analysis was performed using a laptop on the UNH RON server.
             Export data using qiime tools export.
 - The results were then visualized using the qiime2 visualizer (2). 
 ## Findings
-I was not able to upload a plot, but the first one would have been a venn diagram showing the similarity between the samples. In contrast, the second plot would have shown the different genes between the samples. Both plots would have been created using the qiime2 visualizer by inputting the data produced by Bowtie2. 
+<img width="679" height="422" alt="Screenshot 2025-08-28 at 8 48 59 PM" src="https://github.com/user-attachments/assets/b40d846c-fd00-478a-bb2e-45346041e0a7" />
+Figure 1. 
+<img width="687" height="422" alt="Screenshot 2025-08-28 at 8 49 09 PM" src="https://github.com/user-attachments/assets/ca4c69d1-7e75-4de6-a05b-7222bab7eef9" />
+Figure 2. 
+These are Qiime2 demultiplexing summary boxplots showing the per-base quality score of the reads in the samples. This includes the quality scores and sequencing errors for every read at each position. These plots were created using the qiime2 visualizer. The data prodced by dada2 were input to create the plots (2). 
 ## References
 1. Qiime2docs. Gut-to-soil axis tutorial 💩🌱. Microbiome marker gene analysis with QIIME 2. https://amplicon-docs.qiime2.org/en/latest/tutorials/gut-to-soil.html (2025).
 2. Qiime2view. Qiime2. https://view.qiime2.org/ (n.d.).
